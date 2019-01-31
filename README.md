@@ -1,4 +1,4 @@
-# Memalloc  [![Releases](https://img.shields.io/github/release/SkywalkerFR/php-memalloc/all.svg?style=for-the-badge&logo=php)](https://github.com/SkywalkerFR/php-memalloc/releases)
+# Memalloc  [![Releases](https://img.shields.io/github/release/SkywalkerFR/php-memalloc/all.svg?style=for-the-badge&logo=php&colorB=97ca00)](https://github.com/SkywalkerFR/php-memalloc/releases)
 
 It's a tiny lib made for PHP to use by simplifying memory sharing (cache/buffer/datasets/persistent variable)  
 _(Only compatible with unix systems yet)_

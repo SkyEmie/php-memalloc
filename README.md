@@ -40,6 +40,7 @@ memalloc_delete('var1');
 
 ?>
 ```
-
+Output will display 'Foobar123'
+At the end, 'var1' stack is destroyed
 
 __Have fun!__

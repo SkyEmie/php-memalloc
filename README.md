@@ -40,9 +40,9 @@ memalloc_delete('var1');
 
 ?>
 ```
-Output will display ```_Foobar123_```  
+Output will display ```Foobar123```  
    
-At the end of this script, ```_var1_``` stack is destroyed, but if you don't delete it, the next time the script is executed, the stack will still be available.  
+At the end of this script, ```var1``` stack is destroyed, but if you don't delete it, the next time the script is executed, the stack will still be available.  
 _(As long as the apache2 service isn't restarted obviously)_
 
 __Have fun!__

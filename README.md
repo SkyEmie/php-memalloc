@@ -9,7 +9,7 @@ Use of shared memory is a fast method of data exchange between processes, mainly
 Just need to add the memalloc.php file with a require in your script :
 
 ```php
-require('lib/memalloc.php');
+require_once('lib/memalloc.php');
 ```
 _(Obviously you can change his location)_
 

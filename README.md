@@ -21,6 +21,8 @@ Funct                                             |Utility
 ```memalloc_write($stackname, $data)```           | Writing/overwriting in shared memory
 ```memalloc_read($stackname)```                   | Reading in shared memory
 ```memalloc_delete($stackname)```                 | Delete an existing stack in the shared memory
+```memalloc_clean()```                            | If necessary to clear oldest stacks (20% free memory after)
+```memalloc_purge()```                            | If necessary to clear the memory instantly
 
 
 # Example

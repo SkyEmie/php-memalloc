@@ -50,6 +50,6 @@ _(As long as the apache2 service isn't restarted obviously)_
 By default, ```$memalloc_max_memory``` is equal to ```50Mo```  
 and ```$memalloc_autoclean``` is equal to ```80%```. 
 
-When process memory exceeds by default 50Mo, the function ```memalloc_clean()``` is called to delete oldest stacks, to reach by default 80% of used memory (20% free)
+When process memory exceeds by default 50Mo, the function ```memalloc_clean()``` is called to delete oldest stacks, to reach by default 80% of used memory (20% free).
 
 __Have fun!__

@@ -101,6 +101,24 @@ function memalloc_read($stackname) {
 		$data = shmop_read($shmid, 0, $size);
 		shmop_close($shmid);
 
+		/* -- update index (1) table stack name => (id, timestamp) -- */
+		/* if index exist : get & delete */
+		if (@$shmid = shmop_open(1, 'w', 0, 0)) {
+			$size  = shmop_size($shmid);
+			$index = json_decode(shmop_read($shmid, 0, $size), True);
+			shmop_delete($shmid);
+			shmop_close($shmid);
+		}
+
+		/* write new timestamp */
+		$index[$stackname] = array($stackid, time());
+		$index = json_encode($index);
+
+		/* recreate */
+		$shmid = shmop_open(1, 'c', 0777, mb_strlen($index));
+		shmop_write($shmid, $index, 0);
+		shmop_close($shmid);
+
 		return($data);
 	}
 }

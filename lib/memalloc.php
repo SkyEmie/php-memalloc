@@ -63,7 +63,7 @@ function memalloc_write($stackname, $data) {
 		shmop_close($shmid);
 	}
 
-	$index[$stackname] = array($stackid, time());
+	$index[$stackname] = array(time(), $stackid);
 	$index = json_encode($index);
 
 	/* recreate */
@@ -111,7 +111,7 @@ function memalloc_read($stackname) {
 		}
 
 		/* write new timestamp */
-		$index[$stackname] = array($stackid, time());
+		$index[$stackname] = array(time(), $stackid);
 		$index = json_encode($index);
 
 		/* recreate */

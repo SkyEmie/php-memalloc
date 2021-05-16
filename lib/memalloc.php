@@ -5,7 +5,7 @@
  *
  * @since 29 January, 2019
  * @version 1.8 - 1 March, 2019
- * @author Sky' <@SkywalkerFR on twitter>
+ * @author @SkyEmie_
  *
  * Only compatible with unix systems
  */
